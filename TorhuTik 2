@@ -1,0 +1,12 @@
+def Create_TorhruTik(Layer):
+    for i in range(1, Layer + 1):
+        if (i == 1):
+            for j in range(Layer):
+                print(("**").center(Layer * 4))
+        print(("#" * (i * 4)).center(Layer * 4))
+        if (i != 1):
+            print(("#" + (" " * (i * 4 - 2))  +"#").center(Layer * 4))
+
+        print(("#" * (i * 4)).center(Layer * 4))
+if __name__ == '__main__':
+    Create_TorhruTik(5)
